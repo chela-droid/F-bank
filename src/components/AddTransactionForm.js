@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function AddTransactionForm({ onAddTransaction }) {
-  const API = "https://json-server-bank-flatiron-vercel.vercel.app/transactions"
+  const API = "https://transctions-api.onrender.com/transactions"
   const [formData, setformData] = useState({
     description: "",
     date: "",
@@ -31,7 +31,7 @@ function AddTransactionForm({ onAddTransaction }) {
     .then(res => res.json())
     .then(res => onAddTransaction(res))
     
-    alert("Added successfully");
+    alert("Added");
    
   }
 
@@ -44,7 +44,7 @@ function AddTransactionForm({ onAddTransaction }) {
         <label>Description</label>
         <input
           type="text"
-          placeholder="Purpose of use"
+          placeholder="use"
           name="description"
           onChange={handleChange}
           
@@ -60,7 +60,7 @@ function AddTransactionForm({ onAddTransaction }) {
         <label>Amount</label>
         <input
           type="text"
-          placeholder="Amount transacted"
+          placeholder="Amount"
           name="amount"
           onChange={handleChange}
           
@@ -68,12 +68,12 @@ function AddTransactionForm({ onAddTransaction }) {
         <label>Category</label>
         <input
           type="text"
-          placeholder="Category of purpose"
+          placeholder="Category"
           name="category"
           onChange={handleChange}
           
         />
-        <input type="submit" value="Add transaction" />
+        <input type="submit" value="Transaction" />
       </form>
     </div>
   );

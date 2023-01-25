@@ -5,7 +5,7 @@ function SearchForm({ onSearch }) {
     <div>
         
             <div className='search'>
-            <input className='' type="text" placeholder="Search transactions" onChange={onSearch} />
+            <input className='' type="text" placeholder="Search" onChange={onSearch} />
             </div>
         
         

@@ -8,7 +8,7 @@ function TransactionList({ transactions, deleteTransaction }) {
 
   return (
     <div>
-      <table className="ttable" cellSpacing="12px">
+      <table className="ttable" cellSpacing="15px">
         <thead>
           <tr>
             <th>Date</th>
